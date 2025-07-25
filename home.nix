@@ -32,6 +32,7 @@ in
 			ntfs3g
 			bitwarden
 			qutebrowser
+			lazygit
 	];
 
 		home = {

@@ -34,13 +34,16 @@
 		extraGroups = [ "wheel" "input" ];
 			shell = pkgs.zsh;
 		packages = with pkgs; [
-		legcord
 		];
 	};
 
 	services.seatd.enable = true;
 	security.pam.services.sway.enableGnomeKeyring = true;
 
+	# Display manager
+	services.displayManager.ly.enable = true;
+
+	# Window Manager
 	programs.sway.enable = true;
 
 	# Shell
@@ -68,8 +71,10 @@
 			sway
 	];
 
+	# Allow unfree packages
 	nixpkgs.config.allowUnfree = true;
 
+	# Fonts
 	fonts = {
 		enableDefaultPackages = true;
 		fontconfig.enable = true;
@@ -77,9 +82,6 @@
 			nerd-fonts.jetbrains-mono
 		];
 	};
-
-	# Display manager
-	services.displayManager.ly.enable = true;
 
 	# NixOS version
 	system.stateVersion = "25.05";
