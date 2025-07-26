@@ -25,11 +25,15 @@
 			};
 			homeConfigurations = {
 				jan = home-manager.lib.homeManagerConfiguration {
-					inherit pkgs;
-					modules = [
-						./home.nix
-							xremap-flake.homeManagerModules.default
-						nvf.homeManagerModules.default
+                                        inherit pkgs;
+                                        modules = [
+                                                ./home.nix
+                                                xremap-flake.homeManagerModules.default
+                                                nvf.homeManagerModules.default
+                                                        programs.neovim = {
+                                                                enable = true;
+                                                                package = nvf.packages.${system}.default;
+                                                        };
 					];
 				};
 			};
