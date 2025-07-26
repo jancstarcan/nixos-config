@@ -32,10 +32,10 @@
 					];
 				};
 			};
-			packages.x86_64-linux.default =
+			packages.${system}.default =
 				(nvf.lib.neovimConfiguration {
 				 inherit pkgs;
 				 modules = [ ./nvf-configuration.nix ];
-				 });
+				 }).neovim;
 		};
 }
