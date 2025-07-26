@@ -35,6 +35,7 @@ in
 			qutebrowser
 			lazygit
 			prismlauncher
+			neovim
 	];
 
 		home = {

@@ -27,12 +27,11 @@
 				jan = home-manager.lib.homeManagerConfiguration {
 					inherit pkgs;
 					modules = [
-					./home.nix
-					xremap-flake.homeManagerModules.default
-					{home.packages = [customNeovim.neovim];}
+						./home.nix
+							xremap-flake.homeManagerModules.default
+						nvf.homeManagerModules.default
 					];
 				};
 			};
-
 		};
 }
