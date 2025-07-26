@@ -5,6 +5,7 @@ myAliases = {
 	nrsf = "sudo nixos-rebuild switch --flake /home/jan/.dotfiles/";
 	hmsf = "home-manager switch --flake /home/jan/.dotfiles/";
 	se = "sudoedit";
+	lg = "lazygit";
 	".." = "cd ..";
 };
 in
