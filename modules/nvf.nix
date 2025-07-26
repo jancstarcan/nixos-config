@@ -8,11 +8,16 @@
                 enable = true;
                 settings = {
                         vim = {
-                                additionalRuntimePaths = [ "~/.config/nvim" ];
+                                options = {
+                                        tabstop = 4;
+                                        shiftwidth = 4;
+                                        cursorline = true;
+                                };
                                 theme = {
                                         enable = true;
                                         name = "gruvbox";
                                         style = "dark";
+                                        transparent = true;
                                 };
 
                                 statusline.lualine.enable = true;
