@@ -36,7 +36,7 @@
 					leapForwardTo = "<Leader>s";
 					leapForward = "";
 					leapBackwardTo = "<leader>S";
-					leapBackward = "";
+					leapBackwardTill = "";
 				};
 				comments.comment-nvim.enable = true;
 				ui.noice.enable = true;
