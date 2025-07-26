@@ -33,10 +33,12 @@
 				};
 				utility.motion.leap = {
 					enable = true;
-					leapForwardTo = "<Leader>s";
-					leapForward = "";
-					leapBackwardTo = "<leader>S";
-					leapBackwardTill = "";
+					mappings = {
+						leapForwardTo = "<Leader>s";
+						leapForward = "";
+						leapBackwardTo = "<leader>S";
+						leapBackwardTill = "";
+					};
 				};
 				comments.comment-nvim.enable = true;
 				ui.noice.enable = true;
