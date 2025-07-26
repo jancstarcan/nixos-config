@@ -29,13 +29,10 @@
 					modules = [
 					./home.nix
 					xremap-flake.homeManagerModules.default
+					{home.packages = [customNeovim.neovim];}
 					];
 				};
 			};
-			packages.${system}.default =
-				(nvf.lib.neovimConfiguration {
-				 inherit pkgs;
-				 modules = [ ./nvf-configuration.nix ];
-				 }).neovim;
+
 		};
 }
