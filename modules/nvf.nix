@@ -35,7 +35,7 @@
 					enable = true;
 					mappings = {
 						leapForwardTo = "<Leader>s";
-						leapForward = "";
+						leapForwardTill = "";
 						leapBackwardTo = "<leader>S";
 						leapBackwardTill = "";
 					};
