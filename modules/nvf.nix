@@ -3,6 +3,7 @@
 {
         programs.nvf = {
                 enable = true;
+                configDir = "~/.config/nvf";
                 settings = {
                         vim = {
                                 theme = {
