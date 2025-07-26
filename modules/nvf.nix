@@ -27,9 +27,12 @@
 				telescope.enable = true;
 				mini.surround.enable = true;
 				autopairs.nvim-autopairs.enable = true;
-				ui.borders.plugins.which-key = {
+				visuals.indent-blankline = {
 					enable = true;
 				};
+				utility.motion.leap.enable = true;
+				comments.comment-nvim.enable = true;
+				ui.noice.enable = true;
 
 				autocomplete.nvim-cmp.enable = true;
 				lsp = {
