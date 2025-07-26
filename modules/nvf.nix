@@ -29,8 +29,15 @@
 				autopairs.nvim-autopairs.enable = true;
 				visuals.indent-blankline = {
 					enable = true;
+					setupOpts.scope.enabled = true;
 				};
-				utility.motion.leap.enable = true;
+				utility.motion.leap = {
+					enable = true;
+					leapForwardTo = "<Leader>s";
+					leapForward = "";
+					leapBackwardTo = "<leader>S";
+					leapBackward = "";
+				};
 				comments.comment-nvim.enable = true;
 				ui.noice.enable = true;
 
