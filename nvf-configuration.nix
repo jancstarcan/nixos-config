@@ -20,5 +20,8 @@
 			ts.enable = true;
 			html.enable = true;
 		};
+
+                autopairs.nvim-autopairs.enable = true;
+                mini.surround.enable = true;
 	};
 }
