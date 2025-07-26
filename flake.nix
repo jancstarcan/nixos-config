@@ -6,9 +6,10 @@
 		home-manager.url = "github:nix-community/home-manager/release-25.05";
 		home-manager.inputs.nixpkgs.follows = "nixpkgs";
 		xremap-flake.url = "github:xremap/nix-flake";
+		nvf.url = "github:notashelf/nvf";
 	};
 
-	outputs = { self, nixpkgs, home-manager, xremap-flake, ... }:
+	outputs = { nixpkgs, home-manager, xremap-flake, nvf, ... }:
 		let
 			lib = nixpkgs.lib;
 			system = "x86_64-linux";
@@ -17,7 +18,9 @@
 			nixosConfigurations = {
 				nixos = lib.nixosSystem {
 					inherit system;
-					modules = [ ./configuration.nix ];
+					modules = [
+					./configuration.nix
+					];
 				};
 			};
 			homeConfigurations = {
@@ -29,5 +32,10 @@
 					];
 				};
 			};
+			packages.system.default =
+				(nvf.lib.neovimConfiguration {
+				 inherit pkgs;
+				 modules = [ ./nvf-configuration.nix ];
+				 });
 		};
 }
