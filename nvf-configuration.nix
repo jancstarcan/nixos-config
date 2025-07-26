@@ -13,7 +13,7 @@
 		autocomplete.nvim-cmp.enable = true;
 
 		languages = {
-			enableLSP = true;
+			lsp.enable = true;
 			enableTreesitter = true;
 
 			nix.enable = true;
