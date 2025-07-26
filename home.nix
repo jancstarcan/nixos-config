@@ -33,6 +33,7 @@ in
 			bitwarden
 			qutebrowser
 			lazygit
+			prismlauncher
 	];
 
 		home = {
