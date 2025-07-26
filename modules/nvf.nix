@@ -1,9 +1,11 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
+        home.packages = with pkgs; [
+                vscode-langservers-extracted
+        ];
         programs.nvf = {
                 enable = true;
-                configDir = "~/.config/nvf";
                 settings = {
                         vim = {
                                 theme = {
