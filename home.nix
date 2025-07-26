@@ -19,23 +19,24 @@ in
 
 	home.stateVersion = "25.05";
 
-	home.packages = with pkgs; [
-		hello
-			capitaine-cursors
-			wl-clipboard
-			swww
-			librewolf
-			libgcc
-			gcc
-			yazi
-			legcord
-			qbittorrent
-			ntfs3g
-			bitwarden
-			qutebrowser
-			lazygit
-			prismlauncher
-			neovim
+        home.packages = with pkgs; [
+                hello
+                capitaine-cursors
+                wl-clipboard
+                swww
+                librewolf
+                libgcc
+                gcc
+                yazi
+                legcord
+                qbittorrent
+                ntfs3g
+                bitwarden
+                qutebrowser
+                lazygit
+                prismlauncher
+                neovim
+
 	];
 
 		home = {
