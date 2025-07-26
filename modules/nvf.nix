@@ -25,8 +25,13 @@
 
 				statusline.lualine.enable = true;
 				telescope.enable = true;
-				autocomplete.nvim-cmp.enable = true;
+				mini.surround.enable = true;
+				autopairs.nvim-autopairs.enable = true;
+				ui.borders.plugins.which-key = {
+					enable = true;
+				};
 
+				autocomplete.nvim-cmp.enable = true;
 				lsp = {
 					enable = true;
 					servers = {
