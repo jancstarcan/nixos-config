@@ -8,7 +8,7 @@
                 enable = true;
                 settings = {
                         vim = {
-                                addittionalRuntimePaths = [ "~/.config/nvim" ];
+                                additionalRuntimePaths = [ "~/.config/nvim" ];
                                 theme = {
                                         enable = true;
                                         name = "gruvbox";
