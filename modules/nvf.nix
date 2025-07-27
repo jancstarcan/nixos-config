@@ -2,7 +2,10 @@
 
 {
 	home.packages = with pkgs; [
+		neovim
+
 		vscode-langservers-extracted
+		emmet-ls
 		nil
 	];
 	programs.nvf = {
@@ -36,22 +39,25 @@
 					enable = true;
 					mappings = {
 						leapForwardTo = "<Leader>s";
-						leapForwardTill = "";
 						leapBackwardTo = "<leader>S";
-						leapBackwardTill = "";
 					};
 				};
 				comments.comment-nvim.enable = true;
 				ui.noice.enable = true;
 
-				autocomplete.nvim-cmp.enable = true;
+				snippets.luasnip.enable = true;
+				autocomplete.nvim-cmp = {
+					enable = true;
+					mappings = {
+						next = "<C-j>";
+						previous = "<C-k>";
+					};
+				};
 				lsp = {
 					enable = true;
 					servers = {
 						cssls = {};
-						nil_ls = {};
-						html = {};
-						tsserver = {};
+						emmet_ls = {};
 					};
 				};
 				languages = {
@@ -60,6 +66,7 @@
 					nix.enable = true;
 					ts.enable = true;
 					html.enable = true;
+					lua.enable = true;
 				};
 			};
 		};
