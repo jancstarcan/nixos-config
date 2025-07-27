@@ -36,7 +36,6 @@ in
 		lazygit
 		prismlauncher
 		gradle
-		lyrebird
 	];
 
 	home = {
