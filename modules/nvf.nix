@@ -57,6 +57,8 @@
 				};
 				lsp = {
 					enable = true;
+					inlayHints = true;
+					formatOnSave = true;
 					servers = {
 						cssls = {};
 						emmet_ls = {};
@@ -70,6 +72,7 @@
 					ts.enable = true;
 					html.enable = true;
 					lua.enable = true;
+					bash.lsp.enable = true;
 				};
 				treesitter.autotagHtml = true;
 			};
