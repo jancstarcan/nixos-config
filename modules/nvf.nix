@@ -3,6 +3,7 @@
 {
 	home.packages = with pkgs; [
 		vscode-langservers-extracted
+		nil
 	];
 	programs.nvf = {
 		enable = true;
@@ -55,7 +56,7 @@
 
 					nix.enable = true;
 					ts.enable = true;
-					rust.enable = true;
+					html.enable = true;
 				};
 			};
 		};
