@@ -49,6 +49,7 @@
 					enable = true;
 					servers = {
 						cssls = {};
+						nil_ls = {};
 					};
 				};
 				languages = {
