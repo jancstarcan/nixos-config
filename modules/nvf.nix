@@ -50,6 +50,8 @@
 					servers = {
 						cssls = {};
 						nil_ls = {};
+						html = {};
+						tsserver = {};
 					};
 				};
 				languages = {
