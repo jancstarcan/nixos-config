@@ -1,4 +1,4 @@
-{ ... }: 
+{ pkgs, ... }: 
 let
 mod = "Mod4";
 
@@ -14,6 +14,10 @@ menu = "wofi";
 monitor1 = "DP-1";
 monitor2 = "HDMI-A-1";
 in {
+	home.packages = with pkgs; [
+		grim
+		slurp
+	];
 	services.swaync.enable = false;
 	wayland.windowManager.sway = {
 		enable = true;
