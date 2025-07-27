@@ -35,7 +35,6 @@
 					enable = true;
 					setupOpts.scope.enabled = true;
 				};
-				utility.autotag.nvim-ts-autotag.enable = true;
 				utility.motion.leap = {
 					enable = true;
 					mappings = {
@@ -49,10 +48,6 @@
 				snippets.luasnip.enable = true;
 				autocomplete.nvim-cmp = {
 					enable = true;
-					luasnip = {
-						enable = true;
-						friendly-snippets.enable = true;
-					};
 					mappings = {
 						next = "<C-j>";
 						previous = "<C-k>";
@@ -73,6 +68,7 @@
 					html.enable = true;
 					lua.enable = true;
 				};
+				treesitter.autotagHtml = true;
 			};
 		};
 	};
