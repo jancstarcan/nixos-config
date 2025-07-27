@@ -7,6 +7,8 @@
 		vscode-langservers-extracted
 		emmet-ls
 		nil
+		jdt-language-server
+		openjdk17
 	];
 	programs.nvf = {
 		enable = true;
@@ -58,6 +60,7 @@
 					servers = {
 						cssls = {};
 						emmet_ls = {};
+						jdtls = {};
 					};
 				};
 				languages = {
