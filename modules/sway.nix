@@ -17,6 +17,7 @@ in {
 	home.packages = with pkgs; [
 		grim
 		slurp
+		xdg-user-dirs
 	];
 	services.swaync.enable = false;
 	wayland.windowManager.sway = {
