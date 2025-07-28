@@ -14,7 +14,7 @@
 		efiSupport = true;
 		efiInstallAsRemovable = true;
 	};
-	boot.loader.efi.canTouchEfiVariables = false;
+	boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
 
 	# Virtualisation
 	virtualisation.virtualbox.host.enable = true;
@@ -30,7 +30,7 @@
 	# Users
 	users.users.jan = {
 		isNormalUser = true;
-		extraGroups = [ "wheel" "input" ];
+		extraGroups = [ "wheel" "vboxuser" ];
 			shell = pkgs.zsh;
 		packages = with pkgs; [
 		];
