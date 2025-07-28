@@ -36,6 +36,7 @@ in
 		lazygit
 		prismlauncher
 		gradle
+		virtualbox
 	];
 
 	home = {
