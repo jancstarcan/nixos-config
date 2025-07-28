@@ -29,12 +29,12 @@
 						Esc = {
 							held = "Grave";
 							alone = "Grave";
-							alone_timeout = 500;
+							alone_timeout = 0;
 						};
 						Grave = {
 							held = "CapsLock";
 							alone = "CapsLock";
-							alone_timeout = 500;
+							alone_timeout = 0;
 						};
 					};
 				}

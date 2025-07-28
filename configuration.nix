@@ -7,14 +7,20 @@
 		];
 
 	# Bootloader
-	boot.loader.systemd-boot.enable = false;
-	boot.loader.grub = {
-		enable = true;
-		devices = [ "nodev" ];
-		efiSupport = true;
-		efiInstallAsRemovable = true;
+	boot = {
+		loader.systemd-boot.enable = false;
+		loader.grub = {
+			enable = true;
+			devices = [ "nodev" ];
+			efiSupport = true;
+			efiInstallAsRemovable = true;
+		};
+		kernelParams = [ "kvm.enable_virt_at_load=0" ];
 	};
-	boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
+
+	services.udev.extraRules = ''
+		KERNEL=="uinput", MODE="0660", GROUP="input", OPTIONS+="static_node=uinput"
+	'';
 
 	# Virtualisation
 	virtualisation.virtualbox.host.enable = true;
@@ -30,7 +36,7 @@
 	# Users
 	users.users.jan = {
 		isNormalUser = true;
-		extraGroups = [ "wheel" "vboxuser" ];
+		extraGroups = [ "wheel" "input" "vboxuser" ];
 			shell = pkgs.zsh;
 		packages = with pkgs; [
 		];
