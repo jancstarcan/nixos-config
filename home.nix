@@ -19,27 +19,27 @@ in
 
 	home.stateVersion = "25.05";
 
-	home.packages = with pkgs; [
-		hello
-		capitaine-cursors
-		wl-clipboard
-		swww
-		librewolf
-		libgcc
-		gcc
-		yazi
-		legcord
-		qbittorrent
-		ntfs3g
-		bitwarden
-		qutebrowser
-		lazygit
-		prismlauncher
-		gradle
-		minecraft
-	];
-
 	home = {
+		packages = with pkgs; [
+			hello
+			capitaine-cursors
+			wl-clipboard
+			swww
+			librewolf
+			libgcc
+			gcc
+			yazi
+			legcord
+			qbittorrent
+			ntfs3g
+			bitwarden
+			qutebrowser
+			lazygit
+			prismlauncher
+			gradle
+			minecraft
+		];
+
 		sessionVariables = {
 			EDITOR = "nvim";
 			SUDO_EDITOR = "nvim";
@@ -50,6 +50,9 @@ in
 			size = 24;
 		};
 	};
+
+	nixpkgs.config.allowUnfree = true;
+	nixpkgs.config.allowBroken = true;
 
 	gtk = {
 		enable = true;
