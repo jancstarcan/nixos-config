@@ -37,7 +37,6 @@ in
 			lazygit
 			prismlauncher
 			gradle
-			minecraft
 		];
 
 		sessionVariables = {
@@ -50,9 +49,6 @@ in
 			size = 24;
 		};
 	};
-
-	nixpkgs.config.allowUnfree = true;
-	nixpkgs.config.allowBroken = true;
 
 	gtk = {
 		enable = true;
