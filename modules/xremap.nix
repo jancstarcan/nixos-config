@@ -1,21 +1,11 @@
 { pkgs, ... }: {
 	services.xremap = {
-			enable = true;
+			enable = false;
 			package = pkgs.xremap;
 			withGnome = false;
 			extraArgs = ["--watch"];
 
-			config = {
-				/* keymap = [
-				{
-					name = "Caplock to Esc";
-					remap = {
-						CapsLock = "Esc";
-						Esc = "Grave";
-						Grave = "CapsLock";
-					};
-				}
-				]; */
+		config = {
 			modmap = [
 				{
 					name = "CapsLock to Esc/RControl";
@@ -28,14 +18,14 @@
 						"Esc" = {
 							held = "Grave";
 							alone = "Grave";
-							alone_timeout = 1;
-							timeout = 1;
+							alone_timeout = 150;
+							held_timeout = 150;
 						};
 						"Grave" = {
 							held = "CapsLock";
 							alone = "CapsLock";
-							alone_timeout = 1;
-							timeout = 1;
+							alone_timeout = 150;
+							held_timeout = 150;
 						};
 					};
 				}

@@ -10,5 +10,6 @@
 		./wofi.nix
 		./xremap.nix
 		./nvf.nix
+		./kanata.nix
 	];
 }
