@@ -37,6 +37,8 @@ in
 			lazygit
 			prismlauncher
 			gradle
+			cmatrix
+			tgpt
 		];
 
 		sessionVariables = {
