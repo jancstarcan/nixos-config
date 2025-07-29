@@ -39,6 +39,7 @@ in
 			gradle
 			cmatrix
 			tgpt
+			btop
 		];
 
 		sessionVariables = {
