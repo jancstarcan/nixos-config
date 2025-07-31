@@ -40,6 +40,7 @@ in
 			cmatrix
 			tgpt
 			btop
+			chromium
 		];
 
 		sessionVariables = {
