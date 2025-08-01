@@ -33,14 +33,13 @@ in
 			qbittorrent
 			ntfs3g
 			bitwarden
-			qutebrowser
 			lazygit
 			prismlauncher
 			gradle
 			cmatrix
 			tgpt
 			btop
-			chromium
+			zoxide
 		];
 
 		sessionVariables = {
