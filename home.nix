@@ -42,7 +42,6 @@ in
 			zoxide
 			fzf
 			freecad
-			subversion
 		];
 
 		sessionVariables = {
