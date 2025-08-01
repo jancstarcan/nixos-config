@@ -40,6 +40,8 @@ in
 			tgpt
 			btop
 			zoxide
+			fzf
+			frecad
 		];
 
 		sessionVariables = {
@@ -72,6 +74,9 @@ in
 		zsh = {
 			enable = true;
 			shellAliases = myAliases;
+		};
+		zoxide = {
+			enableZshIntegration = true;
 		};
 		git = {
 			enable = true;
