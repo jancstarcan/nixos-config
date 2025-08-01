@@ -41,7 +41,7 @@ in
 			btop
 			zoxide
 			fzf
-			frecad
+			freecad
 		];
 
 		sessionVariables = {
