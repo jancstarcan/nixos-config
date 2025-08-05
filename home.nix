@@ -41,7 +41,9 @@ in
 			btop
 			zoxide
 			fzf
-			freecad
+			freecad-wayland
+			chromium
+			steam
 		];
 
 		sessionVariables = {

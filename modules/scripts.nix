@@ -28,7 +28,7 @@ grim $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s_grim.png')'';
 				executable = true;
 				text = ''
 #!/home/jan/.nix-profile/bin/zsh
-grim -g "$(slurp)" $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s_grim.png')'';
+grim -g "$(slurp)" ~/Pictures/Screenshots/$(date +'%s_grim.png')'';
 			};
 			".scripts/reloadwaybar.sh" = {
 				text = ''
@@ -39,4 +39,4 @@ swaymsg exec waybar &'';
 			};
 		};
 	};
-			   }
+}
