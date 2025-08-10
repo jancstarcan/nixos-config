@@ -42,7 +42,7 @@ in
 			zoxide
 			fzf
 			freecad-wayland
-			chromium
+			mesa
 		];
 
 		sessionVariables = {
