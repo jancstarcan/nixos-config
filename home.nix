@@ -44,6 +44,7 @@ in
 			freecad-wayland
 			mesa
 			neovim
+			lua-language-server
 		];
 
 		sessionVariables = {
