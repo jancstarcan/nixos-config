@@ -2,6 +2,8 @@
 
 {
 	home.packages = with pkgs; [
+		neovim
+
 		vscode-langservers-extracted
 		emmet-ls
 		nil

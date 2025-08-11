@@ -43,7 +43,6 @@ in
 			fzf
 			freecad-wayland
 			mesa
-			neovim
 		];
 
 		sessionVariables = {
