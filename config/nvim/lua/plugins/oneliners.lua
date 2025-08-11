@@ -19,14 +19,7 @@ return {
 		config = true,
 	},
 	{
-		"lukas-reineke/indent-blankline.nvim",
-		main = "ibl",
-		opts = {},
-		require("ibl").setup(),
-	},
-	{
 		"ggandor/leap.nvim",
-		require("leap").setup(),
 		require("leap").set_default_mappings(),
 	},
 	{
