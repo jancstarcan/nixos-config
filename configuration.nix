@@ -75,6 +75,8 @@
 		xwayland
 		sway
 		steam
+		go
+		cargo
 	];
 
 	# Allow unfree packages
