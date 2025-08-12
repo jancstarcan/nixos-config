@@ -63,18 +63,18 @@ button:hover {
 
 #cpu {
 	padding: 0 6 0 0;
-	color: #48aedd;
+	color: #458588;
 }
 
 #memory {
 	padding: 0 6;
-	color: #d07bdb;
+	color: #B16286;
 }
 
 #disk {
 	padding: 0 0 0 6;
 	margin-right: 24;
-	color: #d3cc6c;
+	color: #B8BB26;
 }
 
 #workspaces button.empty {
@@ -98,19 +98,15 @@ to {
 }
 }
 
-#backlight {
-	background-color: #162635;
-}
-
 #pulseaudio {
-	color: #eec962;
+	color: #FABD2F;
 	padding: 0 12;
 	transition: 0.2s ease-in-out;
 }
 
 #pulseaudio:hover {
-	background-color: #eec962;
-	color: #162635;
+	background-color: #FABD2F;
+	color: #3C3836;
 }
 
 #pulseaudio.muted {
