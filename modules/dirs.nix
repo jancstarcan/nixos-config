@@ -7,6 +7,9 @@
 			"Pictures/Screenshots/.keep" = {
 				text = '''';
 			};
+			".scripts/.keep" = {
+				text = '''';
+			};
 		};
 	};
 }

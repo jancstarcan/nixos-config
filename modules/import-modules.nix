@@ -4,7 +4,7 @@
 	imports = [
 		./imv.nix
 		./kitty.nix
-		./scripts.nix
+		./dirs.nix
 		./sway.nix
 		./waybar.nix
 		./wofi.nix
