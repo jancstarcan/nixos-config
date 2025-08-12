@@ -63,12 +63,12 @@ button:hover {
 
 #cpu {
 	padding: 0 6 0 0;
-	color: #458588;
+	color: #83A598;
 }
 
 #memory {
 	padding: 0 6;
-	color: #B16286;
+	color: #D3869B;
 }
 
 #disk {
