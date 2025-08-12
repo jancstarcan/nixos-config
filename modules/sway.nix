@@ -71,9 +71,11 @@ in {
 
 			keybindings = {
 # Screenshots
-				"${mod}+p" = "exec ~/.scripts/capturearea.sh";
-				"${mod}+shift+p" = "exec ~/.scripts/captureactive.sh";
-				"${mod}+shift+mod1+p" = "exec ~/.scripts/captureall.sh";
+				"${mod}+p" = "exec ~/.scripts/screenshot.sh area";
+				"${mod}+shift+p" = "exec ~/.scripts/screenshot.sh active";
+				"${mod}+shift+mod1+p" = "exec ~/.scripts/screenshot.sh full";
+
+				"${mod}+mod1+p" = "exec ~/.scripts/picker.sh";
 
 # Utils
 				"${mod}+shift+r" = "exec ~/.scripts/reloadwaybar.sh";
