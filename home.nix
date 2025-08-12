@@ -45,6 +45,7 @@ in
 			mesa
 			neovim
 			lua-language-server
+			wl-color-picker
 		];
 
 		sessionVariables = {
