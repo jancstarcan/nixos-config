@@ -75,7 +75,7 @@ in {
 				"${mod}+shift+p" = "exec ~/.scripts/screenshot.sh active";
 				"${mod}+shift+mod1+p" = "exec ~/.scripts/screenshot.sh full";
 
-				"${mod}+mod1+p" = "exec ~/.scripts/picker.sh";
+				"${mod}+mod1+p" = "exec wl-color-picker";
 
 # Utils
 				"${mod}+shift+r" = "exec ~/.scripts/reloadwaybar.sh";
