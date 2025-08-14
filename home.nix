@@ -46,6 +46,7 @@ in
 			neovim
 			lua-language-server
 			wl-color-picker
+			solvespace
 		];
 
 		sessionVariables = {

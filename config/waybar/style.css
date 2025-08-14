@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-	background-color: #3C3836;
+	background-color: #282828;
 	transition-property: background-color;
 	transition-duration: .5s;
 }
@@ -15,7 +15,7 @@ window#waybar.hidden {
 }
 
 window#waybar.termite {
-	background-color: #3F3F3F;
+	background-color: #282828;
 }
 
 window#waybar.chromium {
@@ -33,7 +33,7 @@ window#waybar.chromium {
 	padding: 0 10;
 	margin: 0;
 	background-color: transparent;
-	color: #D4C6A1;
+	color: #ebdbb2;
 	transition: 0.2s ease-in-out;
 	border-radius: 0;
 }
@@ -83,11 +83,11 @@ button:hover {
 
 #window {
 	background: transparent;
-	color: #D4C6A1;
+	color: #ebdbb2;
 }
 
 #clock {
-	color: #D4C6A1;
+	color: #ebdbb2;
 	margin: 0 12;
 }
 
@@ -106,7 +106,7 @@ to {
 
 #pulseaudio:hover {
 	background-color: #FABD2F;
-	color: #3C3836;
+	color: #282828;
 }
 
 #pulseaudio.muted {
