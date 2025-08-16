@@ -6,6 +6,7 @@ o.relativenumber = true
 o.tabstop = 4
 o.shiftwidth = 4
 o.smartindent = true
+o.clipboard = "unnamedplus"
 
 vim.api.nvim_create_user_command("DT", function()
 	local config = vim.diagnostic.config
