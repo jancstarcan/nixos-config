@@ -47,6 +47,7 @@ in
 			lua-language-server
 			wl-color-picker
 			solvespace
+			bat
 		];
 
 		sessionVariables = {
