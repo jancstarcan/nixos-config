@@ -116,8 +116,23 @@ return {
 				function(server_name)
 					require('lspconfig')[server_name].setup({})
 				end,
+
 			},
 		})
+
+		local lspconfig = require("lspconfig")
+
+		local servers = {
+			{ "jdtls", "jdtls" },
+		}
+
+		for _, entry in ipairs(servers) do
+			local name, cmd = entry[1], entry[2]
+
+			lspconfig[name].setup({
+				cmd = { cmd },
+			})
+		end
 
 		local cmp = require('cmp')
 

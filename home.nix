@@ -49,6 +49,7 @@ in
 			solvespace
 			bat
 			jdt-language-server
+			jdk17
 		];
 
 		sessionVariables = {
