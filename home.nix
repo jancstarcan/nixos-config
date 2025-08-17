@@ -48,7 +48,7 @@ in
 			wl-color-picker
 			solvespace
 			bat
-			jdtls
+			jdt-language-server
 		];
 
 		sessionVariables = {
