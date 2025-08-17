@@ -48,6 +48,7 @@ in
 			wl-color-picker
 			solvespace
 			bat
+			jdtls
 		];
 
 		sessionVariables = {
@@ -73,7 +74,6 @@ in
 	systemd.user.startServices = true;
 
 	programs = {
-		java-language-server.enable = true;
 		bash = {
 			enable = true;
 			shellAliases = myAliases;
