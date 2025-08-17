@@ -130,7 +130,8 @@ return {
 			local name, cmd = entry[1], entry[2]
 
 			lspconfig[name].setup({
-				cmd = { cmd },
+				cmd = { "jdtls" },
+				root_dir = lspconfig.util.root_pattern("gradlew", ".git", "build.gradle"),
 			})
 		end
 
