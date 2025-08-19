@@ -123,15 +123,19 @@ return {
 		local lspconfig = require("lspconfig")
 
 		local servers = {
-			{ "jdtls", "jdtls" },
+			{
+				"", ""
+			},
 		}
-
+		lspconfig.jdtls.setup({
+			cmd = { "jdtls" },
+			root_dir = lspconfig.util.root_pattern("gradlew", ".git", "build.gradle"),
+		})
 		for _, entry in ipairs(servers) do
 			local name, cmd = entry[1], entry[2]
 
 			lspconfig[name].setup({
-				cmd = { "jdtls" },
-				root_dir = lspconfig.util.root_pattern("gradlew", ".git", "build.gradle"),
+				cmd = cmd,
 			})
 		end
 
