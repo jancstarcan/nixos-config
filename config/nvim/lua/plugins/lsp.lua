@@ -122,24 +122,19 @@ return {
 
 		local lspconfig = require("lspconfig")
 
-		local servers = {
-			{
-				"", ""
-			},
-		}
 		lspconfig.jdtls.setup({
 			cmd = { "jdtls" },
 			root_dir = lspconfig.util.root_pattern("gradlew", ".git", "build.gradle"),
 		})
-		for _, entry in ipairs(servers) do
-			local name, cmd = entry[1], entry[2]
-
-			lspconfig[name].setup({
-				cmd = cmd,
-			})
-		end
-
-		local cmp = require('cmp')
+		require("lspconfig").lua_ls.setup {
+			settings = {
+				Lua = {
+					diagnostics = {
+						globals = { "vim" }, -- so it doesn’t complain about vim
+					},
+				},
+			},
+		}
 
 		require('luasnip.loaders.from_vscode').lazy_load()
 
