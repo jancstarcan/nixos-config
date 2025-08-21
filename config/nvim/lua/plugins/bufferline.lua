@@ -10,32 +10,33 @@ return {
 		local conf = require("telescope.config").values
 		local themes = require("telescope.themes")
 
-		-- Gruvbox palette (medium contrast)
+		-- Gruvbox palette
 		local colors = {
-			bg0      = "#282828",
-			bg1      = "#3c3836",
-			bg2      = "#504945",
-			fg0      = "#fbf1c7",
-			fg1      = "#ebdbb2",
-			fg2      = "#d5c4a1",
-			red      = "#fb4934",
-			green    = "#b8bb26",
-			yellow   = "#fabd2f",
-			blue     = "#83a598",
-			purple   = "#d3869b",
-			aqua     = "#8ec07c",
-			gray     = "#928374",
-			darkgray = "#665c54",
+			bg0    = "#282828",
+			bg1    = "#3c3836",
+			fg0    = "#fbf1c7",
+			fg1    = "#ebdbb2",
+			fg2    = "#d5c4a1",
+			red    = "#fb4934",
+			green  = "#b8bb26",
+			yellow = "#fabd2f",
+			blue   = "#83a598",
+			purple = "#d3869b",
+			aqua   = "#8ec07c",
+			gray   = "#928374",
 		}
 
 		bufferline.setup({
 			options = {
 				mode = "buffers",
 				diagnostics = "nvim_lsp",
-				separator_style = "slant",
+				separator_style = "none",
 				show_buffer_close_icons = false,
 				show_close_icon = false,
 				always_show_bufferline = true,
+				tab_size = 18,
+				max_name_length = 18,
+				offsets = {},
 			},
 			highlights = {
 				fill = {
@@ -64,12 +65,8 @@ return {
 					bg = colors.bg0,
 				},
 				separator_selected = {
-					fg = colors.bg0,
+					fg = colors.bg1,
 					bg = colors.bg1,
-				},
-				separator_visible = {
-					fg = colors.bg0,
-					bg = colors.bg0,
 				},
 				modified = {
 					fg = colors.yellow,
@@ -78,10 +75,6 @@ return {
 				modified_selected = {
 					fg = colors.yellow,
 					bg = colors.bg1,
-				},
-				modified_visible = {
-					fg = colors.yellow,
-					bg = colors.bg0,
 				},
 				error = {
 					fg = colors.red,
