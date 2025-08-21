@@ -12,7 +12,6 @@ in
 
 	{
 	imports = [
-		./modules/import-modules.nix
 	];
 	home.username = "jan";
 	home.homeDirectory = "/home/jan";
