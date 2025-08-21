@@ -50,6 +50,7 @@ in
 			jdt-language-server
 			jdk17
 			tmux
+			stow
 		];
 
 		sessionVariables = {
