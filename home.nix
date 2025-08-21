@@ -28,7 +28,7 @@ in
 			libgcc
 			gcc
 			yazi
-			legcord
+			discord
 			qbittorrent
 			ntfs3g
 			bitwarden
@@ -49,7 +49,6 @@ in
 			bat
 			jdt-language-server
 			jdk17
-			tmux
 			stow
 			imv
 			kitty
