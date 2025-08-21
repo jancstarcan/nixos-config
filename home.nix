@@ -50,6 +50,7 @@ in
 			bat
 			jdt-language-server
 			jdk17
+			tmux
 		];
 
 		sessionVariables = {
