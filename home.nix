@@ -16,8 +16,9 @@ in
 	home.username = "jan";
 	home.homeDirectory = "/home/jan";
 
-	home.stateVersion = "25.05";
+	nixpgs.config.allowUnfree = true;
 
+	home.stateVersion = "25.05";
 	home = {
 		packages = with pkgs; [
 			hello
