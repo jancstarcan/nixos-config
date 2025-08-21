@@ -66,11 +66,11 @@ default_border pixel
 # Basics:
 #
 	# Reload Waybar
-	bindsym $mod+r+Shift exec ~/.config/waybar/scripts/launch.sh
+	bindsym $mod+r+Shift exec ~/.scripts/reloadwaybar.sh
 	# Screenshots
-	bindsym $mod+p exec ~/.config/sway/scripts/capturearea.sh
-	bindsym $mod+p+Shift exec ~/.config/sway/scripts/captureactive.sh
-	bindsym $mod+p+Shift+Control exec ~/.config/sway/scripts/captureall.sh
+	bindsym $mod+p exec ~/.scripts/screenshot.sh area
+	bindsym $mod+p+Shift exec ~/.scripts/screenshot.sh active
+	bindsym $mod+p+Shift+Control exec ~/.scripts/screenshot.sh full
 
     # Start a terminal
     bindsym $mod+Return exec $term

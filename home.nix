@@ -12,7 +12,6 @@ in
 
 	{
 	imports = [
-		import ./modules/import-modules.nix
 	];
 	home.username = "jan";
 	home.homeDirectory = "/home/jan";
@@ -52,6 +51,11 @@ in
 			jdk17
 			tmux
 			stow
+			imv
+			kitty
+			wofi
+			waybar
+			xremap
 		];
 
 		sessionVariables = {
