@@ -12,6 +12,7 @@ in
 
 	{
 	imports = [
+		import ./modules/import-modules.nix
 	];
 	home.username = "jan";
 	home.homeDirectory = "/home/jan";
