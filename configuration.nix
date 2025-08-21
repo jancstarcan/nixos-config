@@ -77,6 +77,7 @@
 		steam
 		go
 		cargo
+		discord
 	];
 
 	# Allow unfree packages

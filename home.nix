@@ -16,8 +16,6 @@ in
 	home.username = "jan";
 	home.homeDirectory = "/home/jan";
 
-	nixpgs.config.allowUnfree = true;
-
 	home.stateVersion = "25.05";
 	home = {
 		packages = with pkgs; [
@@ -29,7 +27,6 @@ in
 			libgcc
 			gcc
 			yazi
-			discord
 			qbittorrent
 			ntfs3g
 			bitwarden
