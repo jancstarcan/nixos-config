@@ -57,7 +57,7 @@ in
 			pciutils
 			dmidecode
 			lshw
-			iasl
+			acpica-tools
 		];
 
 		sessionVariables = {
