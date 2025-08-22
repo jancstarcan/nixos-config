@@ -57,6 +57,7 @@ in
 			pciutils
 			dmidecode
 			lshw
+			iasl
 		];
 
 		sessionVariables = {
