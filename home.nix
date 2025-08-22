@@ -53,6 +53,7 @@ in
 			wofi
 			waybar
 			xremap
+			python
 		];
 
 		sessionVariables = {

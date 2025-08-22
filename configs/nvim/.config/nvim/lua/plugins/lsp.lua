@@ -151,6 +151,7 @@ return {
 			},
 			preselect = "item",
 			completion = {
+				autocomplete = { require("cmp.types").cmp.TriggerEvent.TextChanged },
 				completeopt = "menu,menuone,noinsert"
 			},
 			window = {
