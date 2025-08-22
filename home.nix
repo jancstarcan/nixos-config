@@ -54,6 +54,8 @@ in
 			waybar
 			xremap
 			python3
+			pciutils
+			dmidecode
 		];
 
 		sessionVariables = {
