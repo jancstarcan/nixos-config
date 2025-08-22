@@ -58,6 +58,7 @@ in
 			dmidecode
 			lshw
 			acpica-tools
+			python313Packages.tkinter
 		];
 
 		sessionVariables = {
