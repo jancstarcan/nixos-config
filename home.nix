@@ -56,6 +56,7 @@ in
 			python3
 			pciutils
 			dmidecode
+			lshw
 		];
 
 		sessionVariables = {
